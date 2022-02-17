@@ -26,6 +26,9 @@ function check() {
     if (password.value == '') {
         document.getElementById('errorMessage').innerHTML += 'Ваш Пароль не заполнен<br />';
     }
+    if (name.value != '' && lastname.value != '' && email.value != '' && tel.value != '' && password.value != '') {
+        alert('Добро пожаловать,' + document.getElementById("first").value + '!')
+    }
 
 
 }
